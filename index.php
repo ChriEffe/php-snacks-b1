@@ -8,6 +8,22 @@
     <title>Document</title>
 </head>
 <body>
+    <header>
+        <span>Seleziona il colore: </span>
+        <select name="color" id="color">
+            <option value="all">All</option>
+            <option value="blu">Blu</option>
+            <option value="bianco">Bianco</option>
+            <option value="celeste">Celeste</option>
+        </select>
+        <span>Seleziona la marca: </span>
+        <select name="marca" id="marca">
+            <option value="all">All</option>
+            <option value="volkswagen">Volkswagen</option>
+            <option value="fiat">Fiat</option>
+            <option value="renault">Renault</option>
+        </select>
+    </header>
     <main id="app">
         <ul v-for="car in cars">
             <li>Marca: {{ car.marca }}</li>
